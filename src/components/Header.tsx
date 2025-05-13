@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [language, setLanguage] = useState<'en' | 'ur'>('en');
@@ -9,9 +10,11 @@ export function Header() {
     <header className="fixed top-0 left-0 w-full bg-dark-lighter bg-opacity-90 backdrop-blur-md z-50 border-b border-neon-purple/30">
       <div className="container mx-auto py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-neon-purple text-glow">
-            Joyo <span className="text-neon-pink">Poppo</span>
-          </h1>
+          <Link to="/">
+            <h1 className="text-2xl font-bold text-neon-purple text-glow">
+              Joyo <span className="text-neon-pink">Poppo</span>
+            </h1>
+          </Link>
         </div>
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#how-it-works" className="text-white hover:text-neon-purple transition-colors">
@@ -23,6 +26,9 @@ export function Header() {
           <a href="#join" className="text-white hover:text-neon-blue transition-colors">
             Join Us
           </a>
+          <Link to="/coin-seller" className="text-white hover:text-neon-green transition-colors">
+            Coin Seller
+          </Link>
           <a href="#testimonials" className="text-white hover:text-neon-green transition-colors">
             Testimonials
           </a>

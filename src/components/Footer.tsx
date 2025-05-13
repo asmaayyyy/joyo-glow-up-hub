@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -36,6 +37,7 @@ export function Footer() {
               <li><a href="#how-it-works" className="text-gray-400 hover:text-neon-purple transition-colors">How It Works</a></li>
               <li><a href="#features" className="text-gray-400 hover:text-neon-pink transition-colors">Features</a></li>
               <li><a href="#join" className="text-gray-400 hover:text-neon-blue transition-colors">Join Us</a></li>
+              <li><Link to="/coin-seller" className="text-gray-400 hover:text-neon-green transition-colors">Coin Seller</Link></li>
               <li><a href="#testimonials" className="text-gray-400 hover:text-neon-green transition-colors">Testimonials</a></li>
               <li><a href="#faq" className="text-gray-400 hover:text-neon-orange transition-colors">FAQ</a></li>
             </ul>
@@ -43,10 +45,22 @@ export function Footer() {
           
           <div>
             <h4 className="text-lg font-bold mb-4">Contact</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
+              <li className="text-gray-400 flex items-center">
+                <Phone size={16} className="mr-2 text-neon-purple" />
+                <span>+92 300 1234567</span>
+              </li>
               <li className="text-gray-400">info@joyopoppo.com</li>
-              <li className="text-gray-400">+92 300 1234567</li>
               <li className="text-gray-400">Support: 24/7</li>
+              <li className="mt-4">
+                <Button 
+                  variant="outline" 
+                  className="border-neon-green bg-dark-lighter text-neon-green hover:bg-neon-green hover:text-white"
+                  size="sm"
+                >
+                  <Phone size={16} className="mr-2" /> Contact Coin Seller
+                </Button>
+              </li>
             </ul>
           </div>
           
