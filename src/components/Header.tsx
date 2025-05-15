@@ -29,6 +29,9 @@ export function Header() {
           <Link to="/coin-seller" className="text-white hover:text-neon-green transition-colors">
             Coin Seller
           </Link>
+          <a href="#price-list" className="text-white hover:text-neon-yellow transition-colors">
+            Price List
+          </a>
           <a href="#testimonials" className="text-white hover:text-neon-green transition-colors">
             Testimonials
           </a>
