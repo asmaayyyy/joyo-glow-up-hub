@@ -5,6 +5,7 @@ import { PortfolioHero } from "@/components/portfolio/PortfolioHero";
 import { PriceSection } from "@/components/portfolio/PriceSection";
 import { AboutSection } from "@/components/portfolio/AboutSection";
 import { ContactSection } from "@/components/portfolio/ContactSection";
+import { HostingSection } from "@/components/portfolio/HostingSection";
 
 export default function CoinPortfolio() {
   return (
@@ -13,6 +14,7 @@ export default function CoinPortfolio() {
       <PortfolioHero />
       <PriceSection />
       <AboutSection />
+      <HostingSection />
       <ContactSection />
       <Footer />
     </div>
